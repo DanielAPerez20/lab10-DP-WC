@@ -1,3 +1,8 @@
+# git@github.com:DanielAPerez20/lab10-DP-WC.git
+# Partner 1: William Crotty
+# Partner 2: Daniel Perez
+
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -9,7 +14,7 @@ import math
 
 def square_root(a): 
     try:
-        math.sqrt(a)
+        return math.sqrt(a)
     except:
         raise ValueError("Invalid Input")   
 
@@ -22,23 +27,20 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
-def multiply(a, b):
+def mult(a, b):
     return a * b
 
-def divide(a, b):
+def div(a, b):
     if a == 0:
         raise ZeroDivisionError("Cannot divide by 0")
     return b / a   # raise ZeroDivisionError if a == 0
 
 def logarithm(a, b):
-    if a == 0 or a == 1 or b == 0:
-        ValueError("Invalid Input")
     return math.log(b, a)
 
 def exponent(a, b):
     return a ** b
 
->>>>>>> 799110f7afcee380f30f7a87e067c0bf969677a4
 
 
 
