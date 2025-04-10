@@ -1,8 +1,3 @@
-# https://github.com/DanielAPerez20/lab10-DP-WC
-# Partner 1: Will Crotty
-# Partner 2: Daniel Perez
-
-
 import unittest
 from calculator import *
 
@@ -20,8 +15,16 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 1
-    # def test_multiply(self): # 3 assertions
-    #     fill in code
+    def test_multiply(self): # 3 assertions
+        self.assertEqual(mult(4,2), 8)
+        self.assertEqual(mult(3,2), 6)
+        self.assertEqual(mult(4,4), 16)
+
+
+    def test_divide(self): # 3 assertions
+        self.assertEqual(div(2,4), 2)
+        self.assertEqual(div(2,6), 3)
+        self.assertEqual(div(2,12), 6)
 
     # def test_divide(self): # 3 assertions
     #     fill in code
@@ -42,21 +45,22 @@ class TestCalculator(unittest.TestCase):
             log(0, 0)
     
     ######## Partner 1
-    # def test_log_invalid_argument(self): # 1 assertion
-    #     # call log function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     logarithm(0, 5)
-    #     fill in code
+    def test_log_invalid_argument(self): # 1 assertion
+        with self.assertRaises(ValueError):
+            logarithm(0, 0)
 
-    # def test_hypotenuse(self): # 3 assertions
-    #     fill in code
 
-    # def test_sqrt(self): # 3 assertions
-    #     # Test for invalid argument, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #    square_root(NUM)
-    #     # Test basic function
-    #     fill in code
+    def test_hypotenuse(self): # 3 assertions
+        self.assertEqual(hypotenuse(3,4),5)
+        self.assertEqual(hypotenuse(6,8),10)
+        self.assertEqual(hypotenuse(30,40),50)
+
+    def test_sqrt(self): # 3 assertions
+        with self.assertRaises(ValueError):
+            square_root(-1)
+
+        self.assertEqual(square_root(4),2)
+         #fill in code
     ##########################
 
 # Do not touch this
