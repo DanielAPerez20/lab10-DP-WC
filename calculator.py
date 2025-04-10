@@ -1,3 +1,7 @@
+#https://github.com/DanielAPerez20/lab10-DP-WC
+# will crotty
+# daniel perez
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
