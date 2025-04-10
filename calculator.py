@@ -1,10 +1,7 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+# https://github.com/DanielAPerez20/lab10-DP-WC
+# Partner 1: Will Crotty
+# Partner 2: Daniel Perez
 
-One function per operation, in order.
-"""
-# First example
 import math
 
 
@@ -17,14 +14,10 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
-def divide(a, b):
-    if a == 0:
-        raise ZeroDivisionError("Cannot divide by 0")
-    return b / a   # raise ZeroDivisionError if a == 0
+
 
 def logarithm(a, b):
-    if a == 0 or a == 1 or b == 0:
-        ValueError("Invalid Input")
+
     return math.log(b, a)
 
 def exponent(a, b):
@@ -40,10 +33,13 @@ def sub(a, b):
 def mul(a, b): 
     return a * b
 
+def div(a, b):
+    if a == 0:
+        raise ZeroDivisionError("Cannot divide by 0")
+    return b / a   # raise ZeroDivisionError if a == 0
+
 
 def log(a, b):
-    if a <= 0 or a == 1 or b <= 0:
-        raise ValueError("Invalid input")
     return math.log(b, a)
 
 
